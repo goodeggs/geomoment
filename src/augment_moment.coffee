@@ -4,6 +4,7 @@ module.exports = (moment) ->
   moment.formats =
     day: 'YYYY-MM-DD'
     numberedDay: 'YYYYMMDD'
+    calendarDay: 'YYYY/MM/DD'
     abbrv: 'ddd, MMM Do'
     long: 'dddd, MMMM Do'
     short: 'MMM D'
