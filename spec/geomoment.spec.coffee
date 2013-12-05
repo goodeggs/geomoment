@@ -43,8 +43,8 @@ describe 'geomoment', ->
       expect(m.zone()).to.equal 480
       expect(m.utc().toString()).to.equal 'Mon Nov 04 2013 08:00:00 GMT+0000'
 
-  describe 'toDay', ->
+  describe 'dayString', ->
     it 'returns a day string with the dashed (YYYY-MM-DD) format', ->
       m = geomoment.day '20131104', geomoment.pacific.tzid
-      expect(m.toDay()).to.equal '2013-11-04'
+      expect(m.dayString()).to.equal '2013-11-04'
 

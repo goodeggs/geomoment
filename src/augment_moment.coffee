@@ -1,16 +1,19 @@
 module.exports = (moment) ->
 
-  moment.day = (day, tzid) ->
-    moment.tz day, [moment.day.DASHED_DAY, moment.day.NUMBER_DAY], tzid
-  moment.day.DASHED_DAY = 'YYYY-MM-DD'
-  moment.day.NUMBER_DAY = 'YYYYMMDD'
+  moment.formats =
+    day: 'YYYY-MM-DD'
+    numberedDay: 'YYYYMMDD'
 
-  moment.fn.toDay = ->
-    @format moment.day.DASHED_DAY
+  moment.day = (day, tzid) ->
+    moment.tz day, [moment.formats.day, moment.formats.numberedDay], tzid
+
+  moment.fn.dayString = ->
+    @format moment.formats.day
 
   zones =
     eastern: 'America/New_York'
     central: 'America/Chicago'
+    mountain: 'America/Denver'
     pacific: 'America/Los_Angeles'
   for zone, tzid of zones
     do (zone, tzid) ->
