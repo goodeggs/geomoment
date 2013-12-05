@@ -1,6 +1,6 @@
 {
   "name": "geomoment",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "moment-timezone, if moment-timezone forced you to choose a particular moment in time. also, some extra sugar.",
   "main": "lib/index.js",
   "scripts": {

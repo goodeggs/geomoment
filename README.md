@@ -17,3 +17,7 @@ geomoment.day('2013-01-01', geomoment.pacific.tzid)
 geomoment.day('20101221', geomoment.central.tzid)
 geomoment().toDay() // => '2013-01-01'
 ```
+
+## using it on the client
+
+Use `lib/client.js` with [browserify](https://github.com/substack/node-browserify). USA timezones included only for now.
