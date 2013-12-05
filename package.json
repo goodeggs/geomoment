@@ -1,0 +1,35 @@
+{
+  "name": "geomoment",
+  "version": "0.1.0",
+  "description": "moment-timezone, if moment-timezone forced you to choose a particular moment in time. also, some extra sugar.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --compilers coffee:coffee-script spec/*.spec.coffee",
+    "pretest": "./node_modules/.bin/coffee --bare --compile --output lib/ src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/goodeggs/geomoment.git"
+  },
+  "keywords": [
+    "moment",
+    "date",
+    "time",
+    "timezone",
+    "tz",
+    "moment-timezone"
+  ],
+  "author": "Max Edmands <git@maxedmands.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/goodeggs/geomoment/issues"
+  },
+  "dependencies": {
+    "moment-timezone": "0.0.3"
+  },
+  "devDependencies": {
+    "mocha": "~1.15.1",
+    "coffee-script": "~1.6.3",
+    "chai": "~1.8.1"
+  }
+}
