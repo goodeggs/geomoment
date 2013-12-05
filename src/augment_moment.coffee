@@ -1,8 +1,13 @@
 module.exports = (moment) ->
 
+  # some common date formats
   moment.formats =
     day: 'YYYY-MM-DD'
     numberedDay: 'YYYYMMDD'
+    abbrv: 'ddd, MMM Do'
+    long: 'dddd, MMMM Do'
+    short: 'MMM D'
+    weekday: 'dddd'
 
   moment.day = (day, tzid) ->
     moment.tz day, [moment.formats.day, moment.formats.numberedDay], tzid
