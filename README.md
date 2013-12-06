@@ -37,12 +37,12 @@ Also recommended: [geomoment-angular](https://github.com/goodeggs/geomoment-angu
   </tr>
   <tr>
     <th>time</th>
-    <td>11:12</td>
+    <td>15:12</td>
     <td><code>HH:MM</code></td>
   </tr>
   <tr>
     <th>dayTime</th>
-    <td>2013-12-06 11:12</td>
+    <td>2013-12-06 15:12</td>
     <td><code>YYYY-MM-DD HH:MM</code></td>
   </tr>
   <tr>
@@ -52,12 +52,12 @@ Also recommended: [geomoment-angular](https://github.com/goodeggs/geomoment-angu
   </tr>
   <tr>
     <th>iCalTime</th>
-    <td>111943</td>
+    <td>152207</td>
     <td><code>HHmmss</code></td>
   </tr>
   <tr>
     <th>iCalDayTime</th>
-    <td>20131206T111943</td>
+    <td>20131206T152207</td>
     <td><code>YYYYMMDD[T]HHmmss</code></td>
   </tr>
   <tr>

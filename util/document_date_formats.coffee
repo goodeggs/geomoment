@@ -1,7 +1,7 @@
 fs = require 'fs'
 path = require 'path'
 geomoment = require '../lib'
-now = geomoment()
+now = geomoment 'Fri Dec 06 2013 15:22:07 GMT-0800 (PST)'
 filename = path.resolve(__dirname, '..', 'README.md')
 
 readme = fs.readFileSync(filename, encoding: 'utf-8').split('\n')
@@ -14,7 +14,7 @@ readme.push '<table>'
 for format, spec of geomoment.formats
   readme.push '  <tr>'
   readme.push "    <th>#{format}</th>"
-  readme.push "    <td>#{geomoment().format(spec)}</td>"
+  readme.push "    <td>#{now.format(spec)}</td>"
   readme.push "    <td><code>#{spec}</code></td>"
   readme.push '  </tr>'
 readme.push '</table>'
