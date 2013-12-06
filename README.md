@@ -25,6 +25,8 @@ geomoment.formats.day         = 'YYYY-MM-DD'    // 2013-01-01
 
 Use `lib/client.js` with [browserify](https://github.com/substack/node-browserify). USA timezones included only for now.
 
+Also recommended: [geomoment-angular](https://github.com/goodeggs/geomoment-angular) for use in an [angular.js](http://angularjs.org) project.
+
 ## date formats
 
 <table>
