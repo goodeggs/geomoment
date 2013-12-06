@@ -11,7 +11,7 @@
   "shortSlashDay": "M/DD",
 
   "shortDay": "dddd, MMM D",
-  "abbrvDay": "ddd MM D",
+  "abbrvDay": "ddd MMM D",
   "longDay": "dddd, MMMM D, YYYY",
 
   "weekday": "dddd"

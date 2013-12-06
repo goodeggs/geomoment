@@ -52,12 +52,12 @@ Also recommended: [geomoment-angular](https://github.com/goodeggs/geomoment-angu
   </tr>
   <tr>
     <th>iCalTime</th>
-    <td>111226</td>
+    <td>111742</td>
     <td><code>HHmmss</code></td>
   </tr>
   <tr>
     <th>iCalDayTime</th>
-    <td>20131206T111226</td>
+    <td>20131206T111742</td>
     <td><code>YYYYMMDD[T]HHmmss</code></td>
   </tr>
   <tr>
@@ -77,8 +77,8 @@ Also recommended: [geomoment-angular](https://github.com/goodeggs/geomoment-angu
   </tr>
   <tr>
     <th>abbrvDay</th>
-    <td>Fri 12 6</td>
-    <td><code>ddd MM D</code></td>
+    <td>Fri Dec 6</td>
+    <td><code>ddd MMM D</code></td>
   </tr>
   <tr>
     <th>longDay</th>
