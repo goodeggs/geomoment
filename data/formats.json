@@ -7,8 +7,8 @@
   "iCalTime": "HHmmss",
   "iCalDayTime": "YYYYMMDD[T]HHmmss",
 
-  "slashDay": "M/DD/YYYY",
-  "shortSlashDay": "M/DD",
+  "slashDay": "M/D/YYYY",
+  "shortSlashDay": "M/D",
 
   "shortDay": "dddd, MMM D",
   "abbrvDay": "ddd MMM D",

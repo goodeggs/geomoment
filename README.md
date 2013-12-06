@@ -52,23 +52,23 @@ Also recommended: [geomoment-angular](https://github.com/goodeggs/geomoment-angu
   </tr>
   <tr>
     <th>iCalTime</th>
-    <td>111742</td>
+    <td>111943</td>
     <td><code>HHmmss</code></td>
   </tr>
   <tr>
     <th>iCalDayTime</th>
-    <td>20131206T111742</td>
+    <td>20131206T111943</td>
     <td><code>YYYYMMDD[T]HHmmss</code></td>
   </tr>
   <tr>
     <th>slashDay</th>
-    <td>12/06/2013</td>
-    <td><code>M/DD/YYYY</code></td>
+    <td>12/6/2013</td>
+    <td><code>M/D/YYYY</code></td>
   </tr>
   <tr>
     <th>shortSlashDay</th>
-    <td>12/06</td>
-    <td><code>M/DD</code></td>
+    <td>12/6</td>
+    <td><code>M/D</code></td>
   </tr>
   <tr>
     <th>shortDay</th>
