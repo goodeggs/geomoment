@@ -1,0 +1,18 @@
+{
+  "day": "YYYY-MM-DD",
+  "time": "HH:MM",
+  "dayTime": "YYYY-MM-DD HH:MM",
+
+  "iCalDay": "YYYYMMDD",
+  "iCalTime": "HHmmss",
+  "iCalDayTime": "YYYYMMDD[T]HHmmss",
+
+  "slashDay": "M/DD/YYYY",
+  "shortSlashDay": "M/DD",
+
+  "shortDay": "dddd, MMM D",
+  "abbrvDay": "ddd MM D",
+  "longDay": "dddd, MMMM D, YYYY",
+
+  "weekday": "dddd"
+}

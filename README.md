@@ -17,16 +17,99 @@ geomoment.day('2013-01-01', geomoment.pacific.tzid)
 geomoment.day('20101221', geomoment.central.tzid)
 geomoment().toDay() // => '2013-01-01'
 
-// Date formats
+// Date formats (see below for a complete list)
 geomoment.formats.day         = 'YYYY-MM-DD'    // 2013-01-01
-geomoment.formats.numberedDay = 'YYYYMMDD'      // 20130101
-geomoment.formats.calendarDay = 'YYYY/MM/DD'    // 2013/01/01
-geomoment.formats.abbrv       = 'ddd, MMM Do'   // Tue, Jan 1st
-geomoment.formats.long        = 'dddd, MMMM Do' // Tuesday, January 1st
-geomoment.formats.short       = 'MMM D'         // Jan 1
-geomoment.formats.weekday     = 'dddd'          // Tuesday
 ```
 
 ## using it on the client
 
 Use `lib/client.js` with [browserify](https://github.com/substack/node-browserify). USA timezones included only for now.
+
+## date formats
+
+<table>
+  <tr>
+    <th>day</th>
+    <td>2013-12-06</td>
+    <td><code>YYYY-MM-DD</code></td>
+  </tr>
+  <tr>
+    <th>time</th>
+    <td>11:12</td>
+    <td><code>HH:MM</code></td>
+  </tr>
+  <tr>
+    <th>dayTime</th>
+    <td>2013-12-06 11:12</td>
+    <td><code>YYYY-MM-DD HH:MM</code></td>
+  </tr>
+  <tr>
+    <th>iCalDay</th>
+    <td>20131206</td>
+    <td><code>YYYYMMDD</code></td>
+  </tr>
+  <tr>
+    <th>iCalTime</th>
+    <td>111226</td>
+    <td><code>HHmmss</code></td>
+  </tr>
+  <tr>
+    <th>iCalDayTime</th>
+    <td>20131206T111226</td>
+    <td><code>YYYYMMDD[T]HHmmss</code></td>
+  </tr>
+  <tr>
+    <th>slashDay</th>
+    <td>12/06/2013</td>
+    <td><code>M/DD/YYYY</code></td>
+  </tr>
+  <tr>
+    <th>shortSlashDay</th>
+    <td>12/06</td>
+    <td><code>M/DD</code></td>
+  </tr>
+  <tr>
+    <th>shortDay</th>
+    <td>Friday, Dec 6</td>
+    <td><code>dddd, MMM D</code></td>
+  </tr>
+  <tr>
+    <th>abbrvDay</th>
+    <td>Fri 12 6</td>
+    <td><code>ddd MM D</code></td>
+  </tr>
+  <tr>
+    <th>longDay</th>
+    <td>Friday, December 6, 2013</td>
+    <td><code>dddd, MMMM D, YYYY</code></td>
+  </tr>
+  <tr>
+    <th>weekday</th>
+    <td>Friday</td>
+    <td><code>dddd</code></td>
+  </tr>
+</table>
+
+## license
+
+The MIT License (MIT)
+
+Copyright (c) 2013 Good Eggs Inc.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.

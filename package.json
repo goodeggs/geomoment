@@ -1,11 +1,11 @@
 {
   "name": "geomoment",
-  "version": "0.3.2",
+  "version": "0.4.0",
   "description": "moment-timezone, if moment-timezone forced you to choose a particular moment in time. also, some extra sugar.",
   "main": "lib/index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha --compilers coffee:coffee-script spec/*.spec.coffee",
-    "pretest": "./node_modules/.bin/coffee --bare --compile --output lib/ src/"
+    "pretest": "./node_modules/.bin/coffee --bare --compile --output lib/ src/ && ./node_modules/.bin/coffee util/document_date_formats.coffee"
   },
   "repository": {
     "type": "git",
