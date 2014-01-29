@@ -17,7 +17,7 @@ geomoment.central.tzid
 // Day string sugar
 geomoment.day('2013-01-01', geomoment.pacific.tzid)
 geomoment.day('20101221', geomoment.central.tzid)
-geomoment().toDay() // => '2013-01-01'
+geomoment().dayString() // => '2013-01-01'
 
 // Date formats (see below for a complete list)
 geomoment.formats.day         = 'YYYY-MM-DD'    // 2013-01-01
