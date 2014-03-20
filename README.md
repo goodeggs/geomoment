@@ -21,6 +21,12 @@ geomoment().dayString() // => '2013-01-01'
 
 // Date formats (see below for a complete list)
 geomoment.formats.day         = 'YYYY-MM-DD'    // 2013-01-01
+
+// Stubbing time
+geomoment.stubTime(geomoment.pacific('2013-01-01'));
+geomoment().dayString(); // => '2013-01-01'
+geomoment.restoreTime();
+geomoment().dayString(); // => today's date
 ```
 
 ## using it on the client

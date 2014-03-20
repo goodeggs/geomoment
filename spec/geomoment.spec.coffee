@@ -48,3 +48,18 @@ describe 'geomoment', ->
       m = geomoment.day '20131104', geomoment.pacific.tzid
       expect(m.dayString()).to.equal '2013-11-04'
 
+  describe 'stubTime', ->
+    it 'changes the time returned by calling geomoment.tzid() with no arguments', ->
+      geomoment.stubTime(geomoment.pacific('1988-04-13 12:15'))
+      expect(geomoment.pacific().format('YYYY-MM-DD hh:mm')).to.equal '1988-04-13 12:15'
+
+    it 'changes the time returned by calling geomoment() with no arguments', ->
+      geomoment.stubTime(geomoment.pacific('1988-04-13 12:15'))
+      expect(geomoment().tz(geomoment.pacific.tzid).format('YYYY-MM-DD hh:mm')).to.equal '1988-04-13 12:15'
+
+  describe 'restoreTime', ->
+    it 'restores the time returned by calling geomoment() with no arguments', ->
+      geomoment.stubTime(geomoment.pacific('1988-04-13 12:15'))
+      geomoment.restoreTime()
+      expect(geomoment().format('YYYY-MM-DD hh:mm')).not.to.equal '1988-04-13 12:15'
+
