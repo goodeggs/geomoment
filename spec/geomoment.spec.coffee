@@ -1,4 +1,5 @@
-geomoment = require '../lib/'
+moment = require 'moment-timezone'
+geomoment = require('../lib') moment
 
 {expect} = require 'chai'
 
