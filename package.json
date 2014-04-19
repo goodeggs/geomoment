@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha --compilers coffee:'coffee-script/register' spec/*.spec.coffee",
-    "build": "coffee --bare --compile --output lib/ src/ && npm run document",
+    "build": "coffee --bare --compile --output lib/ src/ && npm run document && browserify lib/client.js > geomoment.js && uglifyjs geomoment.js > geomoment.min.js",
     "document": "coffee util/document_date_formats.coffee",
     "pretest": "npm run build"
   },
@@ -33,6 +33,8 @@
   "devDependencies": {
     "mocha": "^1.18.2",
     "coffee-script": "^1.7.1",
-    "chai": "^1.9.1"
+    "chai": "^1.9.1",
+    "uglify-js": "^2.4.13",
+    "browserify": "^3.44.0"
   }
 }
