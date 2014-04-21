@@ -1,6 +1,4 @@
-moment = require 'moment-timezone/moment-timezone'
-augment = require './augment_moment'
-usa = require '../data/usa.json'
-
-moment.tz.add usa
-module.exports = augment(moment)
+moment = window?.moment
+throw new Error 'geomoment expects moment to be loaded' unless moment?
+moment.tz.add require '../data/usa.json'
+window.geomoment = require('./') moment

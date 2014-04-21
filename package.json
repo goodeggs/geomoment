@@ -1,11 +1,11 @@
 {
   "name": "geomoment",
-  "version": "0.5.0",
+  "version": "1.0.0",
   "description": "moment-timezone, if moment-timezone forced you to choose a particular moment in time. also, some extra sugar.",
   "main": "lib/index.js",
   "scripts": {
-    "test": "mocha --compilers coffee:coffee-script spec/*.spec.coffee",
-    "build": "coffee --bare --compile --output lib/ src/ && npm run document",
+    "test": "mocha --compilers coffee:'coffee-script/register' spec/*.spec.coffee",
+    "build": "coffee --bare --compile --output lib/ src/ && npm run document && browserify lib/client.js > geomoment.js && uglifyjs geomoment.js > geomoment.min.js",
     "document": "coffee util/document_date_formats.coffee",
     "pretest": "npm run build"
   },
@@ -26,13 +26,15 @@
   "bugs": {
     "url": "https://github.com/goodeggs/geomoment/issues"
   },
-  "dependencies": {
+  "peerDependencies": {
     "moment-timezone": ">=0.0.3",
     "moment": "2.x.x"
   },
   "devDependencies": {
-    "mocha": "~1.15.1",
-    "coffee-script": "~1.6.3",
-    "chai": "~1.8.1"
+    "mocha": "^1.18.2",
+    "coffee-script": "^1.7.1",
+    "chai": "^1.9.1",
+    "uglify-js": "^2.4.13",
+    "browserify": "^3.44.0"
   }
 }

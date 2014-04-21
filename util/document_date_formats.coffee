@@ -1,6 +1,7 @@
 fs = require 'fs'
 path = require 'path'
-geomoment = require '..'
+moment = require 'moment-timezone'
+geomoment = require('..') moment
 
 now = geomoment 'Fri Dec 06 2013 15:22:07 GMT-0800 (PST)'
 filename = path.resolve(__dirname, '..', 'README.md')
