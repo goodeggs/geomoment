@@ -100,7 +100,7 @@ Also recommended: [geomoment-angular](https://github.com/goodeggs/geomoment-angu
   </tr>
 </table>
 
-## license
+## License
 
 The MIT License (MIT)
 
