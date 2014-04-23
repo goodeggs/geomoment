@@ -2,7 +2,7 @@ fs = require 'fs'
 path = require 'path'
 geomoment = require '..'
 
-now = geomoment 'Fri Dec 06 2013 15:22:07 GMT-0800 (PST)'
+now = geomoment new Date('Fri Dec 06 2013 15:22:07 GMT-0800 (PST)')
 filename = path.resolve(__dirname, '..', 'README.md')
 
 readme = fs.readFileSync(filename, encoding: 'utf-8').split('\n')
