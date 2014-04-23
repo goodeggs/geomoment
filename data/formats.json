@@ -14,5 +14,7 @@
   "abbrvDay": "ddd MMM D",
   "longDay": "dddd, MMMM D, YYYY",
 
-  "weekday": "dddd"
+  "weekday": "dddd",
+
+  "unixDate": "ddd MMM DD YYYY HH:mm:ss"
 }
