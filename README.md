@@ -4,7 +4,7 @@
 
 This library is basically just a thin, sugary wrapper over [moment.js](http://momentjs.com/) and [moment-timezone](http://momentjs.com/timezone/).
 
-## what can it do?
+## What can it do?
 
 ```javascript
 var geomoment = require('geomoment');
@@ -29,13 +29,13 @@ geomoment.restoreTime();
 geomoment().dayString(); // => today's date
 ```
 
-## using it on the client
+## Using it on the client
 
 Use `lib/client.js` with [browserify](https://github.com/substack/node-browserify). USA timezones included only for now.
 
 Also recommended: [geomoment-angular](https://github.com/goodeggs/geomoment-angular) for use in an [angular.js](http://angularjs.org) project.
 
-## date formats
+## Date formats
 
 <table>
   <tr>
