@@ -45,13 +45,13 @@ Also recommended: [geomoment-angular](https://github.com/goodeggs/geomoment-angu
   </tr>
   <tr>
     <th>time</th>
-    <td>15:12</td>
-    <td><code>HH:MM</code></td>
+    <td>15:22</td>
+    <td><code>HH:mm</code></td>
   </tr>
   <tr>
     <th>dayTime</th>
-    <td>2013-12-06 15:12</td>
-    <td><code>YYYY-MM-DD HH:MM</code></td>
+    <td>2013-12-06 15:22</td>
+    <td><code>YYYY-MM-DD HH:mm</code></td>
   </tr>
   <tr>
     <th>iCalDay</th>
@@ -97,6 +97,11 @@ Also recommended: [geomoment-angular](https://github.com/goodeggs/geomoment-angu
     <th>weekday</th>
     <td>Friday</td>
     <td><code>dddd</code></td>
+  </tr>
+  <tr>
+    <th>unixDate</th>
+    <td>Fri Dec 06 2013 15:22:07</td>
+    <td><code>ddd MMM DD YYYY HH:mm:ss</code></td>
   </tr>
 </table>
 

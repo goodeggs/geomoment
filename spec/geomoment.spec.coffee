@@ -32,6 +32,17 @@ describe 'geomoment', ->
         expect(m.zone()).to.equal 480
         expect(m.toISOString()).to.equal '2013-11-04T18:00:00.000Z'
 
+  describe 'parsing with list of formats', ->
+    {allFormats} = {}
+
+    before ->
+      allFormats = (format for name, format of geomoment.formats)
+
+    it 'parses a dayTime', ->
+      m = geomoment('2014-03-05 12:22', allFormats)
+      expect(m.hours()).to.equal 12
+      expect(m.minutes()).to.equal 22
+
   describe 'day', ->
     it 'parses dashed day (YYYY-MM-DD) in tzid', ->
       m = geomoment.day '2013-11-04', geomoment.pacific.tzid
@@ -62,4 +73,3 @@ describe 'geomoment', ->
       geomoment.stubTime(geomoment.pacific('1988-04-13 12:15', 'YYYY-MM-DD HH:mm'))
       geomoment.restoreTime()
       expect(geomoment().format('YYYY-MM-DD hh:mm')).not.to.equal '1988-04-13 12:15'
-

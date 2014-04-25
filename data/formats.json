@@ -1,7 +1,7 @@
 {
   "day": "YYYY-MM-DD",
-  "time": "HH:MM",
-  "dayTime": "YYYY-MM-DD HH:MM",
+  "time": "HH:mm",
+  "dayTime": "YYYY-MM-DD HH:mm",
 
   "iCalDay": "YYYYMMDD",
   "iCalTime": "HHmmss",
