@@ -27,8 +27,8 @@
     "url": "https://github.com/goodeggs/geomoment/issues"
   },
   "dependencies": {
-    "moment": "2.6.0",
-    "moment-timezone": "0.0.6"
+    "moment": "^2.7.0",
+    "moment-timezone": "^0.1.0"
   },
   "devDependencies": {
     "mocha": "~1.15.1",
