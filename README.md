@@ -1,6 +1,7 @@
 # geomoment
 
 [![NPM](https://nodei.co/npm/geomoment.png)](https://nodei.co/npm/geomoment/)
+[![Build Status](https://travis-ci.org/goodeggs/geomoment.svg)](https://travis-ci.org/goodeggs/geomoment)
 
 This library is basically just a thin, sugary wrapper over [moment.js](http://momentjs.com/) and [moment-timezone](http://momentjs.com/timezone/).
 
