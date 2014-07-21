@@ -13,5 +13,5 @@ describe 'stubTime', ->
     expect(geomoment.pacific().format('YYYY-MM-DD hh:mm')).to.equal '1988-04-13 12:15'
 
   it 'changes the day returned by calling geomoment() with just a time', ->
-    geomoment.stubTime(geomoment.pacific('1988-04-13 12:15', 'YYYY-MM-DD HH:mm'))
-    expect(geomoment('09:00', 'HH:mm').tz(geomoment.pacific.tzid).format('YYYY-MM-DD hh:mm')).to.equal '1988-04-13 09:00'
+    geomoment.stubTime(geomoment.eastern('1988-04-13 12:15', 'YYYY-MM-DD HH:mm'))
+    expect(geomoment('09:00', 'HH:mm', geomoment.eastern.tzid).format('YYYY-MM-DD hh:mm')).to.equal '1988-04-13 09:00'
