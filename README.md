@@ -30,11 +30,7 @@ geomoment.restoreTime();
 geomoment().dayString(); // => today's date
 ```
 
-## Using it on the client
-
-Use `lib/client.js` with [browserify](https://github.com/substack/node-browserify). USA timezones included only for now.
-
-Also recommended: [geomoment-angular](https://github.com/goodeggs/geomoment-angular) for use in an [angular.js](http://angularjs.org) project.
+See also: [geomoment-angular](https://github.com/goodeggs/geomoment-angular) for use in an [angular.js](http://angularjs.org) project.
 
 ## Date formats
 

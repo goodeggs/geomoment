@@ -18,7 +18,7 @@ falafelTransform = (module, transform) ->
 falafelTransform 'moment', (node) ->
   if node.type is 'Program'
     node.update """
-      var stubbableDate = require('lib/stubbable_date');
+      var stubbableDate = require('./lib/stubbable_date');
 
       #{node.source()}
     """

@@ -4,7 +4,7 @@
 //! license : MIT
 //! momentjs.com
 
-var stubbableDate = require('lib/stubbable_date');
+var stubbableDate = require('./lib/stubbable_date');
 
 (function (undefined) {
 
