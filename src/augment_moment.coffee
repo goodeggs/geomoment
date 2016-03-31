@@ -1,5 +1,4 @@
 formatsJson = require('../data/formats.json')
-stubbableDate = require('./stubbable_date')
 
 module.exports = (moment) ->
 
@@ -33,10 +32,5 @@ module.exports = (moment) ->
         args.push tzid
         geomoment.tz.apply @, args
       geomoment[zone].tzid = tzid
-
-  geomoment.stubTime = (time) ->
-    stubbableDate.stubTime moment(time).toDate()
-
-  geomoment.restoreTime = stubbableDate.restoreTime
 
   geomoment
