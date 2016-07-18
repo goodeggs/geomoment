@@ -10,8 +10,7 @@ describe 'timezones', ->
 
     it 'parses date in eastern', ->
       m = geomoment.eastern '2013-11-04 10:00', 'YYYY-MM-DD HH:mm'
-      expect(m.utcOffset()).to.equal -300
-      expect(m.toISOString()).to.equal '2013-11-04T15:00:00.000Z'
+      expect(m.format()).to.equal '2013-11-04T10:00:00-05:00'
 
   describe 'central', ->
     it 'has the central timezone', ->
@@ -19,8 +18,7 @@ describe 'timezones', ->
 
     it 'parses date in central', ->
       m = geomoment.central '2013-11-04 10:00', 'YYYY-MM-DD HH:mm'
-      expect(m.utcOffset()).to.equal -360
-      expect(m.toISOString()).to.equal '2013-11-04T16:00:00.000Z'
+      expect(m.format()).to.equal '2013-11-04T10:00:00-06:00'
 
   describe 'pacific', ->
     it 'has the pacific timezone', ->
@@ -28,6 +26,5 @@ describe 'timezones', ->
 
     it 'parses date in pacific', ->
       m = geomoment.pacific '2013-11-04 10:00', 'YYYY-MM-DD HH:mm'
-      expect(m.utcOffset()).to.equal -480
-      expect(m.toISOString()).to.equal '2013-11-04T18:00:00.000Z'
+      expect(m.format()).to.equal '2013-11-04T10:00:00-08:00'
 
