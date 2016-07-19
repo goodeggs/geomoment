@@ -21,6 +21,16 @@ module.exports = (moment) ->
   geomoment.fn.dayString = ->
     @format geomoment.formats.day
 
+  # Shortcut for setting hour and minutes from HH:mm string
+  geomoment.fn.setTimeOfDay = (timeOfDay) ->
+    throw 'Cannot set time of day with undefined timezone' if !@tz()?
+
+    timeOfDayMoment = geomoment(timeOfDay, 'HH:mm')
+    @set
+      hour: timeOfDayMoment.get('hour')
+      minute: timeOfDayMoment.get('minute')
+    @
+
   zones =
     eastern: 'America/New_York'
     central: 'America/Chicago'
