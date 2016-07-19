@@ -20,6 +20,9 @@ geomoment.day('2013-01-01', geomoment.pacific.tzid)
 geomoment.day('20101221', geomoment.central.tzid)
 geomoment().dayString() // => '2013-01-01'
 
+// Set HH:mm time of day
+geomoment.pacific('2013-01-02').setTimeOfDay('14:00')
+
 // Date formats (see below for a complete list)
 geomoment.formats.day         = 'YYYY-MM-DD'    // 2013-01-01
 ```
@@ -95,6 +98,11 @@ See also: [geomoment-angular](https://github.com/goodeggs/geomoment-angular) for
     <td><code>ddd MMM DD YYYY HH:mm:ss</code></td>
   </tr>
 </table>
+
+## Dependencies
+
+Requires `moment-timezone` when you require `geomoment` but
+requires that your project explicitly includes `moment@2.9.0` or newer.
 
 ## License
 
