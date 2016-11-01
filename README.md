@@ -13,6 +13,7 @@ var geomoment = require('geomoment');
 // Timezone sugar
 geomoment.pacific('2013-01-01', 'YYYY-MM-DD')
 geomoment.eastern('2013-02-08 09:30:26.123')
+geomoment.tz(geomoment.central.tzid) // Now
 geomoment.central.tzid
 
 // Day string sugar
