@@ -3,23 +3,17 @@ path = require 'path'
 geomoment = require '..'
 
 now = geomoment new Date('Fri Dec 06 2013 15:22:07 GMT-0800 (PST)')
-filename = path.resolve(__dirname, '..', 'README.md')
+filename = path.resolve(__dirname, '..', 'FORMATS.md')
 
-readme = fs.readFileSync(filename, encoding: 'utf-8').split('\n')
-before = readme[0..readme.indexOf('## Date formats')]
-after = readme[readme.indexOf('## License')..]
-
-readme = before
-readme.push ''
-readme.push '<table>'
+docs = ['# Date formats']
+docs.push ''
+docs.push '<table>'
 for format, spec of geomoment.formats
-  readme.push '  <tr>'
-  readme.push "    <th>#{format}</th>"
-  readme.push "    <td>#{now.format(spec)}</td>"
-  readme.push "    <td><code>#{spec}</code></td>"
-  readme.push '  </tr>'
-readme.push '</table>'
-readme.push ''
-readme = readme.concat after
+  docs.push '  <tr>'
+  docs.push "    <th>#{format}</th>"
+  docs.push "    <td>#{now.format(spec)}</td>"
+  docs.push "    <td><code>#{spec}</code></td>"
+  docs.push '  </tr>'
+docs.push '</table>'
 
-fs.writeFile filename, readme.join('\n'), encoding: 'utf-8'
+fs.writeFile filename, docs.join('\n'), encoding: 'utf-8'
