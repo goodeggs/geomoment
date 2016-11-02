@@ -8,12 +8,12 @@
   </tr>
   <tr>
     <th>time</th>
-    <td>15:22</td>
+    <td>23:22</td>
     <td><code>HH:mm</code></td>
   </tr>
   <tr>
     <th>dayTime</th>
-    <td>2013-12-06 15:22</td>
+    <td>2013-12-06 23:22</td>
     <td><code>YYYY-MM-DD HH:mm</code></td>
   </tr>
   <tr>
@@ -23,12 +23,12 @@
   </tr>
   <tr>
     <th>iCalTime</th>
-    <td>152207</td>
+    <td>232207</td>
     <td><code>HHmmss</code></td>
   </tr>
   <tr>
     <th>iCalDayTime</th>
-    <td>20131206T152207</td>
+    <td>20131206T232207</td>
     <td><code>YYYYMMDD[T]HHmmss</code></td>
   </tr>
   <tr>
@@ -63,7 +63,7 @@
   </tr>
   <tr>
     <th>unixDate</th>
-    <td>Fri Dec 06 2013 15:22:07</td>
+    <td>Fri Dec 06 2013 23:22:07</td>
     <td><code>ddd MMM DD YYYY HH:mm:ss</code></td>
   </tr>
 </table>
