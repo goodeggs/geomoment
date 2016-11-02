@@ -5,7 +5,8 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha --compilers coffee:coffee-script test/**/*.coffee",
-    "build": "coffee --bare --compile --output lib/ src/ && npm run document",
+    "build": "coffee --bare --compile --output lib/ src/",
+    "prepublish": "npm run document",
     "document": "coffee util/document_date_formats.coffee",
     "pretest": "npm run build"
   },
