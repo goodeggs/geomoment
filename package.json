@@ -24,6 +24,10 @@
   ],
   "author": "Max Edmands <git@maxedmands.com>",
   "license": "MIT",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "always-auth": true
+  },
   "bugs": {
     "url": "https://github.com/goodeggs/geomoment/issues"
   },
